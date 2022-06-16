@@ -8,7 +8,8 @@ function App() {
     <div className="App">
     <h1>Subastas.com</h1>
     <NavBar/>
-    <ItemListContainer Titulo= "Mensaje para el usuario (Bienvenido)"/>
+    <ItemListContainer props='Este es un mensaje para el usuario 
+    (Bienvenido)'/>
     </div>
   );
 }
