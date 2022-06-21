@@ -1,32 +1,32 @@
 import React from "react";
+import './Item.css';
 
 const Item = ({item}) => {
     
     return (
-        <div>
-             <div>
-                <h2>
-                {item.id}
-                </h2>
-            </div>
+        <div className="contenedor">
+<hr/>
             <div>
                 <h2>
                 {item.name}
                 </h2>
             </div>
+
             <div>
-                <h2>
+                <h3 className="contenerIformacion">
                 {item.descripcion}
-                </h2>
+                </h3>
             </div>
+
             <div>
                 <h2>
                 {item.precio}
                 </h2>
             </div>
+
             <div>
                 <h2>
-                {item.stock}
+                Stock: {item.stock}
                 </h2>
             </div>
         </div>

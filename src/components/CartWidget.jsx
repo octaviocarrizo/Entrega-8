@@ -1,5 +1,5 @@
 import React from 'react';
-import carTa from '../Img/Carro.png';
+import carTa from '../components/Img/Carro.png';
 
  function CartWidget(){
 
