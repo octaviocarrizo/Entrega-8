@@ -1,22 +1,19 @@
 import "./Nav.css";
 import CartWidget from '../CartWidget';
-import ItemCount from '../Stock/ItemCount';
+
+import {Link} from 'react-router-dom'
 
 export default function NavBar() { 
 
-    const onAdd = (quantiti) => {
-        console.log(` Compraste ${quantiti} unidades `)
-    }
 
     return(
      <nav className="nav-main">
         <ul className="nav-list">
-            <li>ofertas</li> 
-            <li>Lo destacado</li>
-            <li>ofertas Hot</li>
+            <Link to="/">logo</Link>
+            <Link to="/Ofertas">Ofertas</Link>
+            <Link to="/Destacado">Destacado</Link>
             <CartWidget/>
         </ul> 
-        <ItemCount stock={5} initial={1} onAdd={onAdd} /> 
     </nav> 
     )
 

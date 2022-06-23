@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {productos} from './Productos/productos';
 import ItemDetail from './ItemDetail/ItemDetail';
 
-const ItemDetailContainer = ({props}) => {
+const ItemsDestacado = ({props}) => {
 
     const [Product, setProducto] = useState({}) 
      
@@ -11,7 +11,7 @@ const ItemDetailContainer = ({props}) => {
          const traerProducto = new Promise ((res, rej) => {
             
              setTimeout(() => {
-                 res(productos[2]);
+                 res(productos[1]);
              },2000);
          });
  
@@ -32,4 +32,4 @@ const ItemDetailContainer = ({props}) => {
     
  }
  
- export default ItemDetailContainer;
+ export default ItemsDestacado;
