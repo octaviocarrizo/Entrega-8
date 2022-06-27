@@ -10,8 +10,7 @@ export default function NavBar() {
      <nav className="nav-main">
         <ul className="nav-list">
             <Link to="/">logo</Link>
-            <Link to="/Ofertas">Ofertas</Link>
-            <Link to="/Destacado">Destacado</Link>
+            <Link to="/Category/Pinturas">Pinturas</Link>
             <CartWidget/>
         </ul> 
     </nav> 

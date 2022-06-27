@@ -4,32 +4,34 @@
     {
         id: 1,
         name: 'Pintura N°1',
-        img: "/Img/1.jpg",
+        img:  '../Img/2.jpg',
         descripcion:'',
+        categoría:'pintura',
         Link: "/Destacado",
         precio: 200,
-        stock:1,
+        stock:10,
 
     },
 
     {
         id: 2,
         name: 'Pintura N°2',
-        img: "/Img/2.jpg",
-        descripcion:
-        '',
+        img: '../Img/2.jpg',
+        descripcion:'',
+        categoría:'pintura',
         precio: 600,
-        stock:1,
+        stock:11,
 
     },
 
     {
         id: 3,
         name: 'Pintura N°3',
-        img: "/Img/3.jpg",
+        img: '../Img/3.jpg',
         descripcion:'',
+        categoría:'Dibujo',
         precio: 800,
-        stock:1,
+        stock:12,
 
     },
 ]

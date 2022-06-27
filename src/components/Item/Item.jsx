@@ -2,7 +2,11 @@ import React from "react";
 import './Item.css';
 import {Link} from 'react-router-dom'
 
+
+
 const Item = ({item}) => {
+
+    const urldetalle = `/Detalle/${item.id}`
 
     return (
         <div className="contenedor">
@@ -18,7 +22,7 @@ const Item = ({item}) => {
                 {item.descripcion}
                 </h3>
             </div>
-            <Link to="/Detalle">Detalle</Link>
+            
             <div>
                 <h3>
                 {item.precio}
@@ -28,6 +32,7 @@ const Item = ({item}) => {
                 <h3>
                 Stock: {item.stock}
                 </h3>
+            <Link to={urldetalle}>Detalle</Link>
             </div>
         </div>
     )
