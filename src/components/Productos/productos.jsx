@@ -7,7 +7,6 @@
         img:  '../Img/2.jpg',
         descripcion:'',
         categoría:'pintura',
-        Link: "/Destacado",
         precio: 200,
         stock:10,
 

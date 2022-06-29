@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './ItemDetail.css';
 import ItemCount from '../Stock/ItemCount';
+import {Link} from 'react-router-dom'
 
  function ItemDetail({item}) {
+    
+    const [cant, setCant] = useState(0);
 
-    const onAdd = (quantiti) => {
-        console.log(` Compraste ${quantiti} unidades `)
+    const onAdd = (Cantidad) => {
+        console.log(` Compraste ${Cantidad} unidades `);
+        setCant(Cantidad);
     }
 
     
@@ -34,7 +38,11 @@ import ItemCount from '../Stock/ItemCount';
                     Stock:{item.stock}
                     </h2>
                 </div>
-                <ItemCount stock={5} initial={1} onAdd={onAdd} /> 
+                {
+                    cant === 0 ? (<ItemCount stock={5} initial={1} onAdd={onAdd} />)
+                     : (<Link to="/carrito">Ir al Carrito</Link>)
+                }
+                
             </div>
   )
 }
